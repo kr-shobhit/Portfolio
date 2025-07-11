@@ -5,7 +5,7 @@
 Hello, curious traveler! 🌍 You've just stumbled upon the source code of my **portfolio website** — a handcrafted blend of pixels, passion, and just a pinch of caffeine.
 
 This isn’t just a homepage.  
-It’s my **canvas**, my **code dojo**, my **corner of the internet** where creativity meets `<div>`s.
+It’s my **canvas**, my **code dojo**, my **corner of the internet** where creativity meets `<div>`.
 
 ---
 
@@ -14,7 +14,7 @@ It’s my **canvas**, my **code dojo**, my **corner of the internet** where crea
 Like any good recipe, this site is made with love and:
 
 - `HTML` – The bones 🦴
-- `CSS` – The wardrobe 👗
+- `Tailwind CSS` – The wardrobe 👗
 - `JavaScript` – The personality 🤖
 
 No frameworks, no libraries. Just raw, artisanal front-end magic.
