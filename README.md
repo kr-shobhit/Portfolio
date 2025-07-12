@@ -1,6 +1,13 @@
-# Shobhit's Developer Portfolio
+# 🎭 Welcome to My Digital Stage
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
+> _“Websites aren’t just code — they’re tiny universes, each telling a story.”_
+
+Hello, curious traveler! 🌍 You've just stumbled upon the source code of my **portfolio website** — a handcrafted blend of pixels, passion, and just a pinch of caffeine.
+
+This isn’t just a homepage.  
+It’s my **canvas**, my **code dojo**, my **corner of the internet** where creativity meets `<div>`.
+
+---
 
 ## 🚀 Features
 
