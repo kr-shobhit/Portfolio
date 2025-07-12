@@ -4,37 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shobhit - Full Stack Developer Portfolio</title>
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Shobhit - Full Stack Developer specializing in React, Node.js, and modern web technologies. View my portfolio, projects, and professional experience." />
-    <meta name="keywords" content="developer, portfolio, react, node.js, full stack, web development, shobhit" />
+    <meta
+      name="description"
+      content="Shobhit - Full Stack Developer specializing in React, Node.js, and modern web technologies. View my portfolio, projects, and professional experience."
+    />
+    <meta
+      name="keywords"
+      content="developer, portfolio, react, node.js, full stack, web development, shobhit"
+    />
     <meta name="author" content="Shobhit" />
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Shobhit - Developer Portfolio" />
-    <meta property="og:description" content="Full Stack Developer Portfolio showcasing projects and skills" />
-    <meta property="og:image" content="https://krshobhit.me/assets/images/og-image.jpg" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer Portfolio showcasing projects and skills"
+    />
+    <meta
+      property="og:image"
+      content="https://krshobhit.me/assets/images/og-image.jpg"
+    />
     <meta property="og:url" content="https://krshobhit.me" />
     <meta property="og:type" content="website" />
-    
+
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Shobhit - Developer Portfolio" />
     <meta name="twitter:description" content="Full Stack Developer Portfolio" />
-    <meta name="twitter:image" content="https://krshobhit.me/assets/images/twitter-image.jpg" />
-    
+    <meta
+      name="twitter:image"
+      content="https://krshobhit.me/assets/images/twitter-image.jpg"
+    />
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://krshobhit.me" />
-    
+
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    
+    <meta
+      http-equiv="Referrer-Policy"
+      content="strict-origin-when-cross-origin"
+    />
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
     <!-- Preload critical resources -->
     <link rel="preload" href="assets/css/styles.css" as="style" />
     <link rel="preload" href="assets/js/main.js" as="script" />
@@ -52,11 +74,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script>
@@ -64,7 +89,7 @@
         theme: {
           extend: {
             fontFamily: {
-              'poppins': ['Poppins', 'sans-serif'],
+              poppins: ["Poppins", "sans-serif"],
             },
             keyframes: {
               twinkle: {
@@ -100,14 +125,16 @@
         ],
       };
     </script>
-
   </head>
   <body class="bg-[#0d0d0d] text-slate-200 cursor-none overflow-x-hidden">
     <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded z-[10002]">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded z-[10002]"
+    >
       Skip to main content
     </a>
-    
+
     <!-- Custom Cursor -->
     <div
       id="custom-cursor"
@@ -153,7 +180,11 @@
         <!-- Desktop/Tablet Nav Links -->
         <div class="space-x-8 flex items-center md:flex hidden">
           <!-- Home -->
-          <a href="#" id="nav-home-link" class="nav-link hidden relative group">
+          <a
+            href="#hero"
+            id="nav-home-link"
+            class="nav-link hidden relative group"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -291,965 +322,1428 @@
       role="main"
     >
       <main id="main-content">
-      <!-- Hero Section -->
-      <section
-        id="hero"
-        class="relative flex items-center justify-center text-center snap-start min-h-screen h-screen pt-[var(--nav-height,70px)] overflow-x-hidden"
-      >
-        <div class="z-20 p-6 max-w-4xl mx-auto">
-          <h1
-            class="animate-on-scroll text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-4 text-shadow-lg opacity-0 translate-y-12"
-          >
-            Hi, I'm
-            <span
-              class="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent"
-              >Shobhit</span
-            >
-          </h1>
-          <p
-            class="animate-on-scroll text-lg md:text-2xl text-gray-300 mb-8 text-shadow-lg opacity-0 translate-y-12"
-            data-delay="200"
-          >
-            A passionate
-            <span class="font-bold text-purple-500">Developer</span>
-            crafting engaging digital experiences.
-          </p>
-          <button
-            class="animate-on-scroll px-8 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-900 transform hover:scale-105 transition-all duration-300 ease-in-out opacity-0 translate-y-12"
-            data-delay="400"
-            onclick="window.open('https://drive.google.com/file/d/1lmLd7Ak1gLEzqeYAauNArpuiC_wR53Dt/view?usp=sharing', '_blank')"
-          >
-            Download Resume
-          </button>
-        </div>
-        <div
-          class="scroll-down-arrow absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-none z-10"
+        <!-- Hero Section -->
+        <section
+          id="hero"
+          class="relative flex items-center justify-center text-center snap-start min-h-screen h-screen pt-[var(--nav-height,70px)] overflow-x-hidden"
         >
-          <span
-            class="block w-5 h-5 border-b-2 border-r-2 border-gray-400 -my-1 animate-arrow-bounce"
-          ></span>
-          <span
-            class="block w-5 h-5 border-b-2 border-r-2 border-gray-400 -my-1 animate-arrow-bounce"
-            style="animation-delay: -0.05s"
-          ></span>
-          <span
-            class="block w-5 h-5 border-b-2 border-r-2 border-gray-400 -my-1 animate-arrow-bounce"
-            style="animation-delay: -0.025s"
-          ></span>
-        </div>
-      </section>
-
-      <!-- About Me Section -->
-      <section
-        id="about"
-        class="relative flex flex-col items-center justify-center min-h-screen h-screen bg-black/60 border-b border-white/10 transition-all duration-300 snap-start pt-[var(--nav-height,70px)] px-4 sm:px-6"
-      >
-        <div
-          class="container mx-auto max-w-4xl flex flex-col justify-center items-center"
-        >
-          <h2
-            class="animate-on-scroll text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
-          >
-            About Me
-          </h2>
-          <div
-            class="flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-12"
-          >
-            <!-- Image Left -->
-            <div
-              class="animate-on-scroll w-full md:w-1/2 flex justify-center items-center opacity-0 scale-75 mb-6 md:mb-0"
+          <div class="z-20 p-6 max-w-4xl mx-auto">
+            <h1
+              class="animate-on-scroll text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-4 text-shadow-lg opacity-0 translate-y-12"
             >
-              <div
-                class="w-[80vw] max-w-xs sm:w-48 md:w-auto flex items-center justify-center"
+              Hi, I'm
+              <span
+                class="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent"
+                >Shobhit</span
               >
-                <img
-                  src="assets/images/image.png"
-                  alt="Your Photo"
-                  class="rounded-xl shadow-xl w-full h-auto object-cover transition-transform duration-300"
-                />
-              </div>
-            </div>
-            <!-- Text Right -->
-            <div
-              class="animate-on-scroll w-full md:w-1/2 flex flex-col justify-center opacity-0 md:pl-8"
+            </h1>
+            <p
+              class="animate-on-scroll text-lg md:text-2xl text-gray-300 mb-8 text-shadow-lg opacity-0 translate-y-12"
               data-delay="200"
             >
+              A passionate
+              <span class="font-bold text-purple-500">Developer</span>
+              crafting engaging digital experiences.
+            </p>
+            <button
+              class="animate-on-scroll px-8 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-900 transform hover:scale-105 transition-all duration-300 ease-in-out opacity-0 translate-y-12"
+              data-delay="400"
+              onclick="window.open('https://drive.google.com/file/d/1lmLd7Ak1gLEzqeYAauNArpuiC_wR53Dt/view?usp=sharing', '_blank')"
+            >
+              Download Resume
+            </button>
+          </div>
+          <div
+            class="scroll-down-arrow absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-none z-10"
+          >
+            <span
+              class="block w-5 h-5 border-b-2 border-r-2 border-gray-400 -my-1 animate-arrow-bounce"
+            ></span>
+            <span
+              class="block w-5 h-5 border-b-2 border-r-2 border-gray-400 -my-1 animate-arrow-bounce"
+              style="animation-delay: -0.05s"
+            ></span>
+            <span
+              class="block w-5 h-5 border-b-2 border-r-2 border-gray-400 -my-1 animate-arrow-bounce"
+              style="animation-delay: -0.025s"
+            ></span>
+          </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section
+          id="about"
+          class="relative flex flex-col items-center justify-center min-h-screen h-screen bg-black/60 border-b border-white/10 transition-all duration-300 snap-start pt-[var(--nav-height,70px)] px-4 sm:px-6"
+        >
+          <div
+            class="container mx-auto max-w-4xl flex flex-col justify-center items-center"
+          >
+            <h2
+              class="animate-on-scroll text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
+            >
+              About Me
+            </h2>
+            <div
+              class="flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-12"
+            >
+              <!-- Image Left -->
               <div
-                class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-300 text-center md:text-left"
+                class="animate-on-scroll w-full md:w-1/2 flex justify-center items-center opacity-0 scale-75 mb-6 md:mb-0"
               >
-                <p class="mb-6">
-                  Hello! I'm
-                  <span class="font-bold text-purple-300">Shobhit</span>, an
-                  <span class="font-bold text-purple-300"
-                    >Aspiring Developer</span
-                  >
-                  a passionate and curious learner with a drive to grow, create,
-                  and contribute. Whether it's through content, communication,
-                  or community work, I love turning ideas into impact. I'm
-                  currently exploring opportunities that allow me to build
-                  real-world skills, collaborate with inspiring people, and make
-                  a meaningful difference — all while staying true to who I am.
-                </p>
+                <div
+                  class="w-[80vw] max-w-xs sm:w-48 md:w-auto flex items-center justify-center"
+                >
+                  <img
+                    src="assets/images/image.png"
+                    alt="Your Photo"
+                    class="rounded-xl shadow-xl w-full h-auto object-cover transition-transform duration-300"
+                  />
+                </div>
               </div>
-              <!-- Social Icons Row -->
+              <!-- Text Right -->
               <div
-                class="mt-8 flex flex-row items-center justify-center md:justify-start gap-6"
+                class="animate-on-scroll w-full md:w-1/2 flex flex-col justify-center opacity-0 md:pl-8"
+                data-delay="200"
               >
-                <a
-                  href="mailto:workwith.krshobhit@gmail.com"
-                  target="_blank"
-                  aria-label="Email"
-                  class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                <div
+                  class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-300 text-center md:text-left"
                 >
-                  <i
-                    class="fa-solid fa-square-envelope fa-lg"
-                    style="color: #b197fc"
-                  ></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/kr-shobhit/"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                  class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                  <p class="mb-6">
+                    Hello! I'm
+                    <span class="font-bold text-purple-300">Shobhit</span>, an
+                    <span class="font-bold text-purple-300"
+                      >Aspiring Developer</span
+                    >
+                    a passionate and curious learner with a drive to grow,
+                    create, and contribute. Whether it's through content,
+                    communication, or community work, I love turning ideas into
+                    impact. I'm currently exploring opportunities that allow me
+                    to build real-world skills, collaborate with inspiring
+                    people, and make a meaningful difference — all while staying
+                    true to who I am.
+                  </p>
+                </div>
+                <!-- Social Icons Row -->
+                <div
+                  class="mt-8 flex flex-row items-center justify-center md:justify-start gap-6"
                 >
-                  <i
-                    class="fa-brands fa-linkedin fa-lg"
-                    style="color: #b197fc"
-                  ></i>
-                </a>
-                <a
-                  href="https://github.com/kr-shobhit"
-                  target="_blank"
-                  aria-label="GitHub"
-                  class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
-                >
-                  <i
-                    class="fa-brands fa-square-github fa-lg"
-                    style="color: #b197fc"
-                  ></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/kr_shobhit/"
-                  target="_blank"
-                  aria-label="Instagram"
-                  class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
-                >
-                  <i
-                    class="fa-brands fa-square-instagram fa-lg"
-                    style="color: #b197fc"
-                  ></i>
-                </a>
-                <a
-                  href="https://x.com/kr__shobhit"
-                  target="_blank"
-                  aria-label="Twitter"
-                  class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
-                >
-                  <i
-                    class="fa-brands fa-square-x-twitter fa-lg"
-                    style="color: #b197fc"
-                  ></i>
-                </a>
+                  <a
+                    href="mailto:workwith.krshobhit@gmail.com"
+                    target="_blank"
+                    aria-label="Email"
+                    class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                  >
+                    <i
+                      class="fa-solid fa-square-envelope fa-lg"
+                      style="color: #b197fc"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kr-shobhit/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin fa-lg"
+                      style="color: #b197fc"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/kr-shobhit"
+                    target="_blank"
+                    aria-label="GitHub"
+                    class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                  >
+                    <i
+                      class="fa-brands fa-square-github fa-lg"
+                      style="color: #b197fc"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/kr_shobhit/"
+                    target="_blank"
+                    aria-label="Instagram"
+                    class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                  >
+                    <i
+                      class="fa-brands fa-square-instagram fa-lg"
+                      style="color: #b197fc"
+                    ></i>
+                  </a>
+
+                  <a
+                    href="https://x.com/kr__shobhit"
+                    target="_blank"
+                    aria-label="Twitter"
+                    class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-2xl"
+                  >
+                    <i
+                      class="fa-brands fa-square-x-twitter fa-lg"
+                      style="color: #b197fc"
+                    ></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Skills Section -->
-      <section
-        id="skills"
-        class="relative flex flex-col items-center justify-start bg-black/70 border-b border-white/10 transition-all duration-300 snap-start h-screen pt-[var(--nav-height,70px)]"
-      >
-        <div
-          class="container mx-auto px-6 max-w-5xl w-full flex flex-col items-center"
+        <!-- Skills Section -->
+        <section
+          id="skills"
+          class="relative flex flex-col items-center justify-start bg-black/70 border-b border-white/10 transition-all duration-300 snap-start h-screen pt-[var(--nav-height,70px)]"
         >
-          <h2
-            class="animate-on-scroll text-4xl md:text-5xl font-bold text-center pt-16 pb-6 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 translate-x-24 font-poppins leading-[1.15] pb-1"
+          <div
+            class="container mx-auto px-6 max-w-5xl w-full flex flex-col items-center"
           >
-            Technical Skills
-          </h2>
-          <div class="text-lg text-gray-400 mb-8 text-center">
-            Technologies I Know
-          </div>
-          <!-- Filter Bar -->
-          <div class="relative w-full flex flex-col items-center mb-10">
-            <!-- Mobile/Tablet Dropdown Filter (hidden on desktop) -->
-            <div class="w-full flex lg:hidden justify-center mb-4">
-              <button
-                id="skills-filter-dropdown-btn"
-                class="px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold flex items-center gap-2 shadow-lg border border-purple-400/30"
-                aria-haspopup="listbox"
-                aria-expanded="false"
-              >
-                <i class="fa fa-filter"></i>
-                <span id="skills-filter-dropdown-selected">Languages</span>
-                <i class="fa fa-chevron-down ml-2"></i>
-              </button>
+            <h2
+              class="animate-on-scroll text-4xl md:text-5xl font-bold text-center pt-16 pb-6 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 translate-x-24 font-poppins leading-[1.15] pb-1"
+            >
+              Technical Skills
+            </h2>
+            <div class="text-lg text-gray-400 mb-8 text-center">
+              Technologies I Know
+            </div>
+            <!-- Filter Bar -->
+            <div class="relative w-full flex flex-col items-center mb-10">
+              <!-- Mobile/Tablet Dropdown Filter (hidden on desktop) -->
+              <div class="w-full flex lg:hidden justify-center mb-4">
+                <button
+                  id="skills-filter-dropdown-btn"
+                  class="px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold flex items-center gap-2 shadow-lg border border-purple-400/30"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-filter"></i>
+                  <span id="skills-filter-dropdown-selected">Languages</span>
+                  <i class="fa fa-chevron-down ml-2"></i>
+                </button>
+                <div
+                  id="skills-filter-dropdown-list"
+                  class="absolute top-12 left-0 right-0 mx-auto bg-black/95 rounded-xl shadow-2xl py-2 px-4 z-30 hidden flex flex-col gap-2 w-56 border border-purple-400/20"
+                >
+                  <button
+                    class="skills-filter-btn w-full text-left py-2 active"
+                    data-filter="languages"
+                  >
+                    Languages
+                  </button>
+                  <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="frontend"
+                  >
+                    Frontend
+                  </button>
+                  <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="backend"
+                  >
+                    Backend
+                  </button>
+                  <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="database"
+                  >
+                    Database
+                  </button>
+                  <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="cloud"
+                  >
+                    Cloud
+                  </button>
+                  <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="design"
+                  >
+                    Design
+                  </button>
+                  <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="tools"
+                  >
+                    Tools
+                  </button>
+                </div>
+              </div>
+              <!-- Desktop Filter Bar (unchanged) -->
               <div
-                id="skills-filter-dropdown-list"
-                class="absolute top-12 left-0 right-0 mx-auto bg-black/95 rounded-xl shadow-2xl py-2 px-4 z-30 hidden flex flex-col gap-2 w-56 border border-purple-400/20"
+                id="skills-filter-bar"
+                class="hidden lg:flex gap-3 px-2 py-2"
               >
                 <button
-                  class="skills-filter-btn w-full text-left py-2 active"
+                  class="skills-filter-btn active"
                   data-filter="languages"
                 >
                   Languages
                 </button>
-                <button
-                  class="skills-filter-btn w-full text-left py-2"
-                  data-filter="frontend"
-                >
+                <button class="skills-filter-btn" data-filter="frontend">
                   Frontend
                 </button>
-                <button
-                  class="skills-filter-btn w-full text-left py-2"
-                  data-filter="backend"
-                >
+                <button class="skills-filter-btn" data-filter="backend">
                   Backend
                 </button>
-                <button
-                  class="skills-filter-btn w-full text-left py-2"
-                  data-filter="database"
-                >
+                <button class="skills-filter-btn" data-filter="database">
                   Database
                 </button>
-                <button
-                  class="skills-filter-btn w-full text-left py-2"
-                  data-filter="cloud"
-                >
+                <button class="skills-filter-btn" data-filter="cloud">
                   Cloud
                 </button>
-                <button
-                  class="skills-filter-btn w-full text-left py-2"
-                  data-filter="design"
-                >
+                <button class="skills-filter-btn" data-filter="design">
                   Design
                 </button>
-                <button
-                  class="skills-filter-btn w-full text-left py-2"
-                  data-filter="tools"
-                >
+                <button class="skills-filter-btn" data-filter="tools">
                   Tools
                 </button>
               </div>
+              <div
+                class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mt-4"
+              ></div>
             </div>
-            <!-- Desktop Filter Bar (unchanged) -->
-            <div id="skills-filter-bar" class="hidden lg:flex gap-3 px-2 py-2">
-              <button class="skills-filter-btn active" data-filter="languages">
-                Languages
+            <!-- Skills Grid with fade overlays for scroll -->
+            <div
+              id="skills-grid-wrapper"
+              class="w-full max-w-full relative py-2 flex items-center justify-center overflow-x-hidden"
+            >
+              <!-- Left scroll button (mobile only, hidden by default) -->
+              <button
+                id="skills-scroll-left"
+                class="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-purple-900/60 hover:bg-purple-800/80 rounded-full text-white shadow-lg transition-all duration-200 ease-in-out hidden lg:hidden"
+                aria-label="Scroll left"
+              >
+                <i class="fa fa-chevron-left"></i>
               </button>
-              <button class="skills-filter-btn" data-filter="frontend">
-                Frontend
+              <div
+                id="skills-grid"
+                class="transition-all duration-500 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8 py-12 scrollbar-hide overflow-x-auto lg:overflow-x-visible whitespace-nowrap lg:whitespace-normal scroll-smooth"
+              ></div>
+              <!-- Right scroll button (mobile only, hidden by default) -->
+              <button
+                id="skills-scroll-right"
+                class="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-purple-900/60 hover:bg-purple-800/80 rounded-full text-white shadow-lg transition-all duration-200 ease-in-out hidden lg:hidden"
+                aria-label="Scroll right"
+              >
+                <i class="fa fa-chevron-right"></i>
               </button>
-              <button class="skills-filter-btn" data-filter="backend">
-                Backend
-              </button>
-              <button class="skills-filter-btn" data-filter="database">
-                Database
-              </button>
-              <button class="skills-filter-btn" data-filter="cloud">
-                Cloud
-              </button>
-              <button class="skills-filter-btn" data-filter="design">
-                Design
-              </button>
-              <button class="skills-filter-btn" data-filter="tools">
-                Tools
-              </button>
+              <!-- Left fade overlay -->
+              <div
+                class="pointer-events-none absolute left-0 top-0 h-full w-12 z-10 hidden md:block"
+              ></div>
+              <!-- Right fade overlay -->
+              <div
+                class="pointer-events-none absolute right-0 top-0 h-full w-12 z-10 hidden md:block"
+              ></div>
             </div>
-            <div
-              class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mt-4"
-            ></div>
-          </div>
-          <!-- Skills Grid with fade overlays for scroll -->
-          <div
-            id="skills-grid-wrapper"
-            class="w-full max-w-full relative py-2 flex items-center justify-center overflow-x-hidden"
-          >
-            <!-- Left scroll button (mobile only, hidden by default) -->
-            <button
-              id="skills-scroll-left"
-              class="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-purple-900/60 hover:bg-purple-800/80 rounded-full text-white shadow-lg transition-all duration-200 ease-in-out hidden lg:hidden"
-              aria-label="Scroll left"
-            >
-              <i class="fa fa-chevron-left"></i>
-            </button>
-            <div
-              id="skills-grid"
-              class="transition-all duration-500 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8 py-12 scrollbar-hide overflow-x-auto lg:overflow-x-visible whitespace-nowrap lg:whitespace-normal scroll-smooth"
-            ></div>
-            <!-- Right scroll button (mobile only, hidden by default) -->
-            <button
-              id="skills-scroll-right"
-              class="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-purple-900/60 hover:bg-purple-800/80 rounded-full text-white shadow-lg transition-all duration-200 ease-in-out hidden lg:hidden"
-              aria-label="Scroll right"
-            >
-              <i class="fa fa-chevron-right"></i>
-            </button>
-            <!-- Left fade overlay -->
-            <div
-              class="pointer-events-none absolute left-0 top-0 h-full w-12 z-10 hidden md:block"
-            ></div>
-            <!-- Right fade overlay -->
-            <div
-              class="pointer-events-none absolute right-0 top-0 h-full w-12 z-10 hidden md:block"
-            ></div>
-          </div>
 
-          
-          <script>
-            // Technical Skills filter dropdown for mobile/tablet
-            (function () {
-              var dropdownBtn = document.getElementById(
-                "skills-filter-dropdown-btn"
-              );
-              var dropdownList = document.getElementById(
-                "skills-filter-dropdown-list"
-              );
-              var selected = document.getElementById(
-                "skills-filter-dropdown-selected"
-              );
-              if (dropdownBtn && dropdownList && selected) {
-                dropdownBtn.addEventListener("click", function (e) {
-                  e.stopPropagation();
-                  var expanded =
-                    dropdownBtn.getAttribute("aria-expanded") === "true";
-                  dropdownBtn.setAttribute("aria-expanded", !expanded);
-                  dropdownList.classList.toggle("hidden");
-                });
-                var dropdownBtns =
-                  dropdownList.querySelectorAll(".skills-filter-btn");
-                dropdownBtns.forEach(function (btn) {
-                  btn.addEventListener("click", function () {
-                    selected.textContent = btn.textContent;
-                    dropdownList.classList.add("hidden");
-                    dropdownBtn.setAttribute("aria-expanded", "false");
-                    renderSkillsGrid(btn.dataset.filter);
-                    // Remove active from all, add to clicked
-                    dropdownBtns.forEach(function (b) {
-                      b.classList.remove(
+            <script>
+              // Fallback skills functionality
+              document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(function () {
+                  const skillsGrid = document.getElementById("skills-grid");
+                  if (skillsGrid && skillsGrid.children.length === 0) {
+                    console.log("Initializing fallback skills grid");
+                    initFallbackSkills();
+                  }
+                }, 1000);
+
+                function initFallbackSkills() {
+                  const skills = [
+                    {
+                      label: "C++",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+                      category: "languages",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "Python",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                      category: "languages",
+                      color: "text-yellow-200",
+                      bg: "from-black/80 via-yellow-400/40 to-blue-900/40",
+                      border: "border-yellow-900/30",
+                    },
+                    {
+                      label: "Java",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+                      category: "languages",
+                      color: "text-orange-200",
+                      bg: "from-black/80 via-orange-600/40 to-blue-900/60",
+                      border: "border-orange-900/30",
+                    },
+                    {
+                      label: "Kotlin",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+                      category: "languages",
+                      color: "text-purple-200",
+                      bg: "from-black/80 via-purple-500/40 to-blue-900/40",
+                      border: "border-purple-900/30",
+                    },
+                    {
+                      label: "HTML",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+                      category: "frontend",
+                      color: "text-orange-200",
+                      bg: "from-black/80 via-orange-900/40 to-black/80",
+                      border: "border-orange-900/30",
+                    },
+                    {
+                      label: "CSS",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                      category: "frontend",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "JavaScript",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                      category: "frontend",
+                      color: "text-yellow-200",
+                      bg: "from-black/80 via-yellow-900/40",
+                      border: "border-yellow-900/30",
+                    },
+                    {
+                      label: "Tailwind CSS",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+                      category: "frontend",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "Jetpack Compose",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg",
+                      category: "frontend",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "Node.js",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                      category: "backend",
+                      color: "text-green-200",
+                      bg: "from-black/80 via-green-900/40 to-black/80",
+                      border: "border-green-900/30",
+                    },
+                    {
+                      label: "Express",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+                      category: "backend",
+                      color: "text-gray-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-white/10",
+                      extra: "bg-white rounded-xl p-2",
+                    },
+                    {
+                      label: "MySQL",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+                      category: "database",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "PostgreSQL",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+                      category: "database",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "MongoDB",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+                      category: "database",
+                      color: "text-green-200",
+                      bg: "from-black/80 via-yellow-900/40 to-black/80",
+                      border: "border-yellow-900/40",
+                    },
+                    {
+                      label: "Firebase",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg",
+                      category: "database",
+                      color: "text-green-200",
+                      bg: "from-black/80 via-green-900/40 to-black/80",
+                      border: "border-green-900/30",
+                    },
+                    {
+                      label: "Vercel",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+                      category: "cloud",
+                      color: "text-pink-200",
+                      bg: "from-black/80 via-pink-900/40 to-black/80",
+                      border: "border-pink-900/30",
+                    },
+                    {
+                      label: "Figma",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+                      category: "design",
+                      color: "text-pink-200",
+                      bg: "from-black/80 via-pink-900/40 to-black/80",
+                      border: "border-pink-900/30",
+                    },
+                    {
+                      label: "Canva",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
+                      category: "design",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "Git",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+                      category: "tools",
+                      color: "text-red-200",
+                      bg: "from-black/80 via-red-900/40 to-black/80",
+                      border: "border-red-900/30",
+                    },
+                    {
+                      label: "Postman",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+                      category: "tools",
+                      color: "text-red-200",
+                      bg: "from-black/80 via-red-900/40 to-black/80",
+                      border: "border-red-900/30",
+                    },
+                    {
+                      label: "Visual Studio Code",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+                      category: "tools",
+                      color: "text-red-200",
+                      bg: "from-black/80 via-red-900/40 to-black/80",
+                      border: "border-red-900/30",
+                    },
+                    {
+                      label: "Android Studio",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+                      category: "tools",
+                      color: "text-red-200",
+                      bg: "from-black/80 via-red-900/40 to-black/80",
+                      border: "border-red-900/30",
+                    },
+                  ];
+
+                  const grid = document.getElementById("skills-grid");
+                  const filterBtns =
+                    document.querySelectorAll(".skills-filter-btn");
+
+                  function renderSkillsGrid(filter) {
+                    let filtered = skills.filter((s) => s.category === filter);
+                    grid.innerHTML = filtered
+                      .map(
+                        (skill) => `
+                    <div class="skills-card group">
+                      <div class="icon-box ${skill.bg || ""} ${
+                          skill.border || ""
+                        }">
+                        <img src="${skill.src}" alt="${skill.label}" class="${
+                          skill.extra || ""
+                        }" />
+                        <span class="skills-tooltip">${skill.label}</span>
+                      </div>
+                    </div>
+                  `
+                      )
+                      .join("");
+                    grid.classList.remove(
+                      "flex",
+                      "overflow-x-auto",
+                      "gap-6",
+                      "md:gap-8",
+                      "whitespace-nowrap",
+                      "scrollbar-hide"
+                    );
+                    grid.classList.add(
+                      "grid",
+                      "grid-cols-2",
+                      "sm:grid-cols-3",
+                      "md:grid-cols-4",
+                      "lg:grid-cols-6"
+                    );
+                    // Tooltip show/hide
+                    grid.querySelectorAll(".skills-card").forEach((card) => {
+                      card.addEventListener("mouseenter", () => {
+                        const tip = card.querySelector(".skills-tooltip");
+                        if (tip) tip.style.opacity = "1";
+                      });
+                      card.addEventListener("mouseleave", () => {
+                        const tip = card.querySelector(".skills-tooltip");
+                        if (tip) tip.style.opacity = "0";
+                      });
+                    });
+                  }
+
+                  filterBtns.forEach((btn) => {
+                    btn.onclick = () => {
+                      filterBtns.forEach((b) => b.classList.remove("active"));
+                      btn.classList.add("active");
+                      renderSkillsGrid(btn.dataset.filter);
+                    };
+                  });
+
+                  // Initial render: default to 'languages'
+                  renderSkillsGrid("languages");
+                }
+              });
+            </script>
+
+            <script>
+              // Technical Skills filter dropdown for mobile/tablet
+              (function () {
+                var dropdownBtn = document.getElementById(
+                  "skills-filter-dropdown-btn"
+                );
+                var dropdownList = document.getElementById(
+                  "skills-filter-dropdown-list"
+                );
+                var selected = document.getElementById(
+                  "skills-filter-dropdown-selected"
+                );
+                if (dropdownBtn && dropdownList && selected) {
+                  dropdownBtn.addEventListener("click", function (e) {
+                    e.stopPropagation();
+                    var expanded =
+                      dropdownBtn.getAttribute("aria-expanded") === "true";
+                    dropdownBtn.setAttribute("aria-expanded", !expanded);
+                    dropdownList.classList.toggle("hidden");
+                  });
+                  var dropdownBtns =
+                    dropdownList.querySelectorAll(".skills-filter-btn");
+                  dropdownBtns.forEach(function (btn) {
+                    btn.addEventListener("click", function () {
+                      selected.textContent = btn.textContent;
+                      dropdownList.classList.add("hidden");
+                      dropdownBtn.setAttribute("aria-expanded", "false");
+                      renderSkillsGrid(btn.dataset.filter);
+                      // Remove active from all, add to clicked
+                      dropdownBtns.forEach(function (b) {
+                        b.classList.remove(
+                          "active",
+                          "bg-purple-700",
+                          "text-white"
+                        );
+                      });
+                      btn.classList.add(
                         "active",
                         "bg-purple-700",
                         "text-white"
                       );
                     });
-                    btn.classList.add("active", "bg-purple-700", "text-white");
                   });
-                });
-                document.addEventListener("click", function (e) {
-                  if (
-                    !dropdownList.contains(e.target) &&
-                    !dropdownBtn.contains(e.target)
-                  ) {
-                    dropdownList.classList.add("hidden");
-                    dropdownBtn.setAttribute("aria-expanded", "false");
+                  document.addEventListener("click", function (e) {
+                    if (
+                      !dropdownList.contains(e.target) &&
+                      !dropdownBtn.contains(e.target)
+                    ) {
+                      dropdownList.classList.add("hidden");
+                      dropdownBtn.setAttribute("aria-expanded", "false");
+                    }
+                  });
+                }
+              })();
+            </script>
+            <script>
+              // Skills grid scroll buttons for mobile
+              (function () {
+                var grid = document.getElementById("skills-grid");
+                var leftBtn = document.getElementById("skills-scroll-left");
+                var rightBtn = document.getElementById("skills-scroll-right");
+                function updateScrollButtons() {
+                  if (!grid || !leftBtn || !rightBtn) return;
+                  if (window.innerWidth >= 1024) {
+                    leftBtn.classList.add("hidden");
+                    rightBtn.classList.add("hidden");
+                    grid.classList.remove(
+                      "overflow-x-auto",
+                      "whitespace-nowrap",
+                      "scroll-smooth"
+                    );
+                    grid.classList.add(
+                      "lg:overflow-x-visible",
+                      "lg:whitespace-normal"
+                    );
+                    return;
                   }
-                });
-              }
-            })();
-          </script>
-          <script>
-            // Skills grid scroll buttons for mobile
-            (function () {
-              var grid = document.getElementById("skills-grid");
-              var leftBtn = document.getElementById("skills-scroll-left");
-              var rightBtn = document.getElementById("skills-scroll-right");
-              function updateScrollButtons() {
-                if (!grid || !leftBtn || !rightBtn) return;
-                if (window.innerWidth >= 1024) {
-                  leftBtn.classList.add("hidden");
-                  rightBtn.classList.add("hidden");
-                  grid.classList.remove(
+                  // Show buttons only if scrollable
+                  if (grid.scrollWidth > grid.clientWidth + 8) {
+                    leftBtn.classList.remove("hidden");
+                    rightBtn.classList.remove("hidden");
+                  } else {
+                    leftBtn.classList.add("hidden");
+                    rightBtn.classList.add("hidden");
+                  }
+                  grid.classList.add(
                     "overflow-x-auto",
                     "whitespace-nowrap",
                     "scroll-smooth"
                   );
-                  grid.classList.add(
+                  grid.classList.remove(
                     "lg:overflow-x-visible",
                     "lg:whitespace-normal"
                   );
-                  return;
                 }
-                // Show buttons only if scrollable
-                if (grid.scrollWidth > grid.clientWidth + 8) {
-                  leftBtn.classList.remove("hidden");
-                  rightBtn.classList.remove("hidden");
-                } else {
-                  leftBtn.classList.add("hidden");
-                  rightBtn.classList.add("hidden");
+                if (leftBtn && rightBtn && grid) {
+                  leftBtn.addEventListener("click", function () {
+                    grid.scrollBy({
+                      left: -grid.clientWidth * 0.8,
+                      behavior: "smooth",
+                    });
+                  });
+                  rightBtn.addEventListener("click", function () {
+                    grid.scrollBy({
+                      left: grid.clientWidth * 0.8,
+                      behavior: "smooth",
+                    });
+                  });
+                  grid.addEventListener("scroll", updateScrollButtons);
+                  window.addEventListener("resize", updateScrollButtons);
+                  setTimeout(updateScrollButtons, 300); // Initial check after render
                 }
-                grid.classList.add(
-                  "overflow-x-auto",
-                  "whitespace-nowrap",
-                  "scroll-smooth"
-                );
-                grid.classList.remove(
-                  "lg:overflow-x-visible",
-                  "lg:whitespace-normal"
-                );
-              }
-              if (leftBtn && rightBtn && grid) {
-                leftBtn.addEventListener("click", function () {
-                  grid.scrollBy({
-                    left: -grid.clientWidth * 0.8,
-                    behavior: "smooth",
-                  });
-                });
-                rightBtn.addEventListener("click", function () {
-                  grid.scrollBy({
-                    left: grid.clientWidth * 0.8,
-                    behavior: "smooth",
-                  });
-                });
-                grid.addEventListener("scroll", updateScrollButtons);
-                window.addEventListener("resize", updateScrollButtons);
-                setTimeout(updateScrollButtons, 300); // Initial check after render
-              }
-            })();
-          </script>
-        </div>
-      </section>
+              })();
+            </script>
+          </div>
+        </section>
 
-      <!-- Projects Section -->
-      <section
-        id="projects"
-        class="relative flex items-center justify-center bg-black/60 border-b border-white/10 transition-all duration-300 snap-start min-h-screen pt-[var(--nav-height,70px)] px-2 sm:px-6"
-      >
-        <div class="container mx-auto px-0 sm:px-6 max-w-6xl">
-          <h2
-            class="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
-          >
-            Featured Projects
-          </h2>
-          <div class="animate-on-scroll w-full opacity-0 translate-y-12">
-            <div
-              class="relative mx-auto max-w-full flex flex-col items-center justify-center"
+        <!-- Projects Section -->
+        <section
+          id="projects"
+          class="relative flex items-center justify-center bg-black/60 border-b border-white/10 transition-all duration-300 snap-start min-h-screen pt-[var(--nav-height,70px)] px-2 sm:px-6"
+        >
+          <div class="container mx-auto px-0 sm:px-6 max-w-6xl">
+            <h2
+              class="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
             >
-              <!-- Carousel Wrapper -->
-              <div id="projects-carousel" class="w-full overflow-hidden">
-                <div
-                  id="projects-track"
-                  class="flex transition-transform duration-700 ease-in-out"
-                >
-                  <!-- Project Card 1 -->
+              Featured Projects
+            </h2>
+            <div class="animate-on-scroll w-full opacity-0 translate-y-12">
+              <div
+                class="relative mx-auto max-w-full flex flex-col items-center justify-center"
+              >
+                <!-- Carousel Wrapper -->
+                <div id="projects-carousel" class="w-full overflow-hidden">
                   <div
-                    class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                    id="projects-track"
+                    class="flex transition-transform duration-700 ease-in-out"
                   >
+                    <!-- Project Card 1 -->
                     <div
-                      class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <img
-                        src="https://placehold.co/600x400/3182ce/ffffff?text=E-Commerce+Platform"
-                        alt="Project 1"
-                        class="w-full h-40 object-cover"
-                      />
-                      <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold mb-2 text-purple-300">
-                          ShoppersHub
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-3">
-                          PHP, MySQL, Apache, XAMPP
-                        </p>
-                        <p class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1">
-                          A full-stack e-commerce solution with user auth,
-                          product management, and cart system.
-                        </p>
-                        <div class="flex justify-between items-center mt-auto">
-                          <a
-                            href="https://github.com/kr-shobhit/ShoppersHub"
-                            class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
-                            >View Source &rarr;</a
+                      <div
+                        class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      >
+                        <img
+                          src="https://placehold.co/600x400/3182ce/ffffff?text=E-Commerce+Platform"
+                          alt="Project 1"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-4 flex flex-col flex-grow">
+                          <h3
+                            class="text-xl font-semibold mb-2 text-purple-300"
                           >
+                            ShoppersHub
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-3">
+                            PHP, MySQL, Apache, XAMPP
+                          </p>
+                          <p
+                            class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1"
+                          >
+                            A full-stack e-commerce solution with user auth,
+                            product management, and cart system.
+                          </p>
+                          <div
+                            class="flex justify-between items-center mt-auto"
+                          >
+                            <a
+                              href="https://github.com/kr-shobhit/ShoppersHub"
+                              class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                              >View Source &rarr;</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- Project Card 2 -->
-                  <div
-                    class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
+                    <!-- Project Card 2 -->
                     <div
-                      class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <img
-                        src="https://placehold.co/600x400/4c51bf/ffffff?text=Event+Hosting+Platform"
-                        alt="Project 2"
-                        class="w-full h-40 object-cover"
-                      />
-                      <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold mb-2 text-purple-300">
-                          ImpactHub
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-3">
-                          React, Vite, Node.js, Firebase, Vercel
-                        </p>
-                        <p class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1">
-                          ImpactHub is a platform designed to bridge small-scale
-                          social organizations with individuals interested in
-                          supporting community-driven events.
-                        </p>
-                        <div class="flex justify-between items-center mt-auto">
-                          <a
-                            href="https://impacthub-front-end.vercel.app"
-                            class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
-                            >View Live &rarr;</a
+                      <div
+                        class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      >
+                        <img
+                          src="https://placehold.co/600x400/4c51bf/ffffff?text=Event+Hosting+Platform"
+                          alt="Project 2"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-4 flex flex-col flex-grow">
+                          <h3
+                            class="text-xl font-semibold mb-2 text-purple-300"
                           >
+                            ImpactHub
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-3">
+                            React, Vite, Node.js, Firebase, Vercel
+                          </p>
+                          <p
+                            class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1"
+                          >
+                            ImpactHub is a platform designed to bridge
+                            small-scale social organizations with individuals
+                            interested in supporting community-driven events.
+                          </p>
+                          <div
+                            class="flex justify-between items-center mt-auto"
+                          >
+                            <a
+                              href="https://impacthub-front-end.vercel.app"
+                              class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                              >View Live &rarr;</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- Project Card 3 -->
-                  <div
-                    class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
+                    <!-- Project Card 3 -->
                     <div
-                      class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <img
-                        src="https://placehold.co/600x400/805ad5/ffffff?text=Developers+Portfolio"
-                        alt="Project 3"
-                        class="w-full h-40 object-cover"
-                      />
-                      <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold mb-2 text-purple-300">
-                          Portfolio
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-3">
-                          HTML, Tailwind CSS, JavaScript
-                        </p>
-                        <p class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1">
-                          The very page you're on, built with a focus on
-                          performance and modern animations.
-                        </p>
-                        <div class="flex justify-between items-center mt-auto">
-                          <a
-                            href="#"
-                            class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
-                            >View Source &rarr;</a
+                      <div
+                        class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      >
+                        <img
+                          src="https://placehold.co/600x400/805ad5/ffffff?text=Developers+Portfolio"
+                          alt="Project 3"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-4 flex flex-col flex-grow">
+                          <h3
+                            class="text-xl font-semibold mb-2 text-purple-300"
                           >
+                            Portfolio
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-3">
+                            HTML, Tailwind CSS, JavaScript
+                          </p>
+                          <p
+                            class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1"
+                          >
+                            The very page you're on, built with a focus on
+                            performance and modern animations.
+                          </p>
+                          <div
+                            class="flex justify-between items-center mt-auto"
+                          >
+                            <a
+                              href="#"
+                              class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                              >View Source &rarr;</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- Project Card 4 -->
-                  <div
-                    class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
+                    <!-- Project Card 4 -->
                     <div
-                      class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <img
-                        src="https://placehold.co/600x400/805ad5/ffffff?text=Pictorial+Blogging"
-                        alt="Project 4"
-                        class="w-full h-40 object-cover"
-                      />
-                      <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-xl font-semibold mb-2 text-purple-300">
-                          LensVerse
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-3">
-                          HTML, CSS, JavaScript
-                        </p>
-                        <p class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1">
-                          Pictorial Blog Website
-                        </p>
-                        <div class="flex justify-between items-center mt-auto">
-                          <a
-                            href="https://kr-shobhit.github.io/LensVerse/"
-                            class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
-                            >View Live &rarr;</a
+                      <div
+                        class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      >
+                        <img
+                          src="https://placehold.co/600x400/805ad5/ffffff?text=Pictorial+Blogging"
+                          alt="Project 4"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-4 flex flex-col flex-grow">
+                          <h3
+                            class="text-xl font-semibold mb-2 text-purple-300"
                           >
-                          <a
-                            href="https://github.com/kr-shobhit/LensVerse"
-                            class="text-gray-500 hover:text-gray-400 text-xs transition-colors duration-300"
-                            >View Source &rarr;</a
+                            LensVerse
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-3">
+                            HTML, CSS, JavaScript
+                          </p>
+                          <p
+                            class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1"
                           >
+                            Pictorial Blog Website
+                          </p>
+                          <div
+                            class="flex justify-between items-center mt-auto"
+                          >
+                            <a
+                              href="https://kr-shobhit.github.io/LensVerse/"
+                              class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                              >View Live &rarr;</a
+                            >
+                            <a
+                              href="https://github.com/kr-shobhit/LensVerse"
+                              class="text-gray-500 hover:text-gray-400 text-xs transition-colors duration-300"
+                              >View Source &rarr;</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Carousel Buttons: below cards on mobile/tablet, overlay on desktop -->
-              <div
-                class="flex w-full justify-between mt-4 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 lg:right-0 lg:px-0 static"
-              >
-                <button
-                  id="project-prev-btn"
-                  aria-label="Previous Project"
-                  class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-left-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.75 19.5L8.25 12l7.5-7.5"
-                    />
-                  </svg>
-                </button>
-                <button
-                  id="project-next-btn"
-                  aria-label="Next Project"
-                  class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-right-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section
-        id="education"
-        class="relative flex items-center justify-center bg-black/70 border-b border-white/10 transition-all duration-300 snap-start h-screen pt-[var(--nav-height,70px)]"
-      >
-        <div class="container mx-auto px-6 max-w-4xl">
-          <h2
-            class="animate-on-scroll text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
-          >
-            Education
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div
-              class="animate-on-scroll card-hover p-6 rounded-lg flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 hover:bg-gray-800/40 opacity-0 translate-y-12"
-            >
-              <h3 class="text-2xl font-semibold mb-2 text-purple-300">
-                Master of Science - Artificial Intelligence and Cyber Security
-              </h3>
-              <p class="text-gray-400 text-sm mb-3">
-                Indian Institute of Technology Patna | 2025 - 2027
-              </p>
-              <p class="text-gray-300 flex-grow">
-                Pursuing Masters with specializations in Artificial Intelligence and Cyber Security domains.
-              </p>
-            </div>
-            <div
-              class="animate-on-scroll card-hover p-6 rounded-lg flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 hover:bg-gray-800/40 opacity-0 translate-y-12"
-              data-delay="200"
-            >
-              <h3 class="text-2xl font-semibold mb-2 text-purple-300">
-                Bachelor of Computer Applications
-              </h3>
-              <p class="text-gray-400 text-sm mb-3">
-                Birla Institute of Technology, Mesra | 2022 - 2025
-              </p>
-              <p class="text-gray-300 flex-grow">
-                Completed Bachelors with a focus on software development, database
-                concepts, and computer science fundamentals.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Certifications Section -->
-      <section
-        id="certifications"
-        class="relative flex items-center justify-center bg-black/70 border-b border-white/10 transition-all duration-300 snap-start min-h-screen pt-[var(--nav-height,70px)] px-2 sm:px-6"
-      >
-        <div class="container mx-auto px-0 sm:px-6 max-w-6xl">
-          <h2
-            class="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
-          >
-            Certifications
-          </h2>
-          <div class="animate-on-scroll w-full opacity-0 translate-y-12">
-            <div
-              class="relative mx-auto max-w-full flex flex-col items-center justify-center"
-            >
-              <!-- Carousel Wrapper -->
-              <div id="certifications-carousel" class="w-full overflow-hidden">
+                <!-- Carousel Buttons: below cards on mobile/tablet, overlay on desktop -->
                 <div
-                  id="certifications-track"
-                  class="flex transition-transform duration-700 ease-in-out"
+                  class="flex w-full justify-between mt-4 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 lg:right-0 lg:px-0 static"
                 >
-                  <!-- Certification Card 1 -->
-                  <div
-                    class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                  <button
+                    id="project-prev-btn"
+                    aria-label="Previous Project"
+                    class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-left-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
                   >
-                    <div
-                      class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-rose-400/40 hover:border-rose-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-rose-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-rose-900/30 via-black/60 to-rose-900/10 relative p-8"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-6 h-6"
                     >
-                      <div class="flex flex-col flex-grow justify-start">
-                        <h3
-                          class="text-2xl font-semibold text-rose-200 mb-1 pr-12"
-                        >
-                          AWS Solutions Architect Virtual Experience Program
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-1">Forage</p>
-                        <p class="text-xs text-rose-300 mb-2">
-                          Issued: June 2023
-                        </p>
-                        <a
-                          href="https://drive.google.com/file/d/1ky92NqP4XiDlIYfwA5U9MkEpDFUCBdtl/view?usp=sharing"
-                          target="_blank"
-                          class="md:absolute left-8 bottom-10 text-rose-400 hover:text-rose-500 font-semibold text-xs transition-colors duration-300"
-                          >Verify Credential &rarr;</a
-                        >
-                      </div>
-                      <div class="absolute bottom-6 right-6">
-                        <i
-                          class="fa-solid fa-award text-4xl text-rose-400 drop-shadow"
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Certification Card 1 -->
-                  <div
-                    class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 19.5L8.25 12l7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    id="project-next-btn"
+                    aria-label="Next Project"
+                    class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-right-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
                   >
-                    <div
-                      class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-orange-400/40 hover:border-orange-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-orange-900/30 via-black/60 to-orange-900/10 relative p-8"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-6 h-6"
                     >
-                      <div class="flex flex-col flex-grow justify-start">
-                        <h3
-                          class="text-2xl font-semibold text-orange-200 mb-1 pr-12"
-                        >
-                          Foundations of Prompt Engineering
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-1">
-                          Amazon Web Services (AWS)
-                        </p>
-                        <p class="text-xs text-orange-300 mb-2">
-                          Issued: June 2025
-                        </p>
-                        <a
-                          href="https://drive.google.com/file/d/1l3KSl95ohSGEaER6CRzYALgcplZePG2f/view?usp=sharing"
-                          target="_blank"
-                          class="md:absolute left-8 bottom-10 text-orange-400 hover:text-orange-500 font-semibold text-xs transition-colors duration-300"
-                          >Verify Credential &rarr;</a
-                        >
-                      </div>
-                      <div class="absolute bottom-6 right-6">
-                        <i
-                          class="fa-brands fa-aws text-4xl text-orange-400 drop-shadow"
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Certification Card 2 -->
-                  <div
-                    class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
-                    <div
-                      class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-stone-400/40 hover:border-stone-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-grey-500/20 hover:bg-grey-800/40 bg-gradient-to-br from-stone-900/30 via-black/60 to-stone-900/10 relative p-8"
-                    >
-                      <div class="flex flex-col flex-grow justify-start">
-                        <h3
-                          class="text-2xl font-semibold text-stone-200 mb-1 pr-10"
-                        >
-                          CodeFest Hackathon Problem Statement Winner '23
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-1">Birla Institute of Technology, Mesra</p>
-                        <p class="text-xs text-stone-300 mb-2">
-                          March 2023
-                        </p>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                        <a
-                          href="https://drive.google.com/file/d/1lOkIqP5Leej9pNwXcwItPoCmEcyyC2pj/view?usp=sharing"
-                          target="_blank"
-                          class="md:absolute left-8 bottom-10 text-stone-400 hover:text-stone-500 font-semibold text-xs transition-colors duration-300"
-                          >View Certificate &rarr;</a
-                        >
-                      </div>
-                      <div class="absolute bottom-6 right-6">
-                        <i
-                          class="fa-solid fa-trophy text-4xl text-stone-400 drop-shadow"
-                        ></i>
+        <!-- Education Section -->
+        <section
+          id="education"
+          class="relative flex items-center justify-center bg-black/70 border-b border-white/10 transition-all duration-300 snap-start h-screen pt-[var(--nav-height,70px)]"
+        >
+          <div class="container mx-auto px-6 max-w-4xl">
+            <h2
+              class="animate-on-scroll text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
+            >
+              Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div
+                class="animate-on-scroll card-hover p-6 rounded-lg flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 hover:bg-gray-800/40 opacity-0 translate-y-12"
+              >
+                <h3 class="text-2xl font-semibold mb-2 text-purple-300">
+                  Master of Science - Artificial Intelligence and Cyber Security
+                </h3>
+                <p class="text-gray-400 text-sm mb-3">
+                  Indian Institute of Technology Patna | 2025 - 2027
+                </p>
+                <p class="text-gray-300 flex-grow">
+                  Pursuing Masters with specializations in Artificial
+                  Intelligence and Cyber Security domains.
+                </p>
+              </div>
+              <div
+                class="animate-on-scroll card-hover p-6 rounded-lg flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 hover:bg-gray-800/40 opacity-0 translate-y-12"
+                data-delay="200"
+              >
+                <h3 class="text-2xl font-semibold mb-2 text-purple-300">
+                  Bachelor of Computer Applications
+                </h3>
+                <p class="text-gray-400 text-sm mb-3">
+                  Birla Institute of Technology, Mesra | 2022 - 2025
+                </p>
+                <p class="text-gray-300 flex-grow">
+                  Completed Bachelors with a focus on software development,
+                  database concepts, and computer science fundamentals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section
+          id="certifications"
+          class="relative flex items-center justify-center bg-black/70 border-b border-white/10 transition-all duration-300 snap-start min-h-screen pt-[var(--nav-height,70px)] px-2 sm:px-6"
+        >
+          <div class="container mx-auto px-0 sm:px-6 max-w-6xl">
+            <h2
+              class="animate-on-scroll text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent text-shadow-lg opacity-0 -translate-x-24 font-poppins leading-[1.15] pb-1"
+            >
+              Certifications
+            </h2>
+            <div class="animate-on-scroll w-full opacity-0 translate-y-12">
+              <div
+                class="relative mx-auto max-w-full flex flex-col items-center justify-center"
+              >
+                <!-- Carousel Wrapper -->
+                <div
+                  id="certifications-carousel"
+                  class="w-full overflow-hidden"
+                >
+                  <div
+                    id="certifications-track"
+                    class="flex transition-transform duration-700 ease-in-out"
+                  >
+                    <!-- Certification Card 1 -->
+                    <div
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                    >
+                      <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-rose-400/40 hover:border-rose-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-rose-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-rose-900/30 via-black/60 to-rose-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-rose-200 mb-1 pr-12"
+                          >
+                            AWS Solutions Architect Virtual Experience Program
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">Forage</p>
+                          <p class="text-xs text-rose-300 mb-2">
+                            Issued: June 2023
+                          </p>
+                          <a
+                            href="https://drive.google.com/file/d/1ky92NqP4XiDlIYfwA5U9MkEpDFUCBdtl/view?usp=sharing"
+                            target="_blank"
+                            class="md:absolute left-8 bottom-10 text-rose-400 hover:text-rose-500 font-semibold text-xs transition-colors duration-300"
+                            >Verify Credential &rarr;</a
+                          >
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-solid fa-award text-4xl text-rose-400 drop-shadow"
+                          ></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- Certification Card 2 -->
-                  <div
-                    class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
+                    <!-- Certification Card 1 -->
                     <div
-                      class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-blue-400/40 hover:border-blue-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-blue-900/30 via-black/60 to-blue-900/10 relative p-8"
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <div class="flex flex-col flex-grow justify-start">
-                        <h3
-                          class="text-2xl font-semibold text-blue-200 mb-1 pr-12"
-                        >
-                          GenAI Powered Data Analytics
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-1">Forage</p>
-                        <p class="text-xs text-blue-300 mb-2">
-                          Issued: June 2025
-                        </p>
-
-                        <a
-                          href="https://drive.google.com/file/d/1mXfvx4iMDiUG2Vv-hT9KtcSUMoyKlb9V/view?usp=sharing"
-                          target="_blank"
-                          class="md:absolute left-8 bottom-10 text-blue-400 hover:text-blue-500 font-semibold text-xs transition-colors duration-300"
-                          >Verify Credential &rarr;</a
-                        >
-                      </div>
-                      <div class="absolute bottom-6 right-6">
-                        <i
-                          class="fa-solid fa-award text-4xl text-blue-400 drop-shadow"
-                        ></i>
+                      <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-orange-400/40 hover:border-orange-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-orange-900/30 via-black/60 to-orange-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-orange-200 mb-1 pr-12"
+                          >
+                            Foundations of Prompt Engineering
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">
+                            Amazon Web Services (AWS)
+                          </p>
+                          <p class="text-xs text-orange-300 mb-2">
+                            Issued: June 2025
+                          </p>
+                          <a
+                            href="https://drive.google.com/file/d/1l3KSl95ohSGEaER6CRzYALgcplZePG2f/view?usp=sharing"
+                            target="_blank"
+                            class="md:absolute left-8 bottom-10 text-orange-400 hover:text-orange-500 font-semibold text-xs transition-colors duration-300"
+                            >Verify Credential &rarr;</a
+                          >
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-brands fa-aws text-4xl text-orange-400 drop-shadow"
+                          ></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- Certification Card 3 -->
-                  <div
-                    class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
+                    <!-- Certification Card 2 -->
                     <div
-                      class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-green-400/40 hover:border-green-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-green-900/30 via-black/60 to-green-900/10 relative p-8"
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <div class="flex flex-col flex-grow justify-start">
-                        <h3
-                          class="text-2xl font-semibold text-green-200 mb-1 pr-12"
-                        >
-                          Structured Query Language - Intermediate
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-1">HackerRank</p>
-                        <p class="text-xs text-green-300 mb-2">
-                          Issued: Jan 2025
-                        </p>
+                      <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-stone-400/40 hover:border-stone-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-grey-500/20 hover:bg-grey-800/40 bg-gradient-to-br from-stone-900/30 via-black/60 to-stone-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-stone-200 mb-1 pr-10"
+                          >
+                            CodeFest Hackathon Problem Statement Winner '23
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">
+                            Birla Institute of Technology, Mesra
+                          </p>
+                          <p class="text-xs text-stone-300 mb-2">March 2023</p>
 
-                        <a
-                          href="https://drive.google.com/file/d/1KBcEw1TF_AGenfRz4SgA2rRhAsbJBbtm/view?usp=sharing"
-                          target="_blank"
-                          class="md:absolute left-8 bottom-10 text-green-400 hover:text-green-500 font-semibold text-xs transition-colors duration-300"
-                          >Verify Credential &rarr;</a
-                        >
-                      </div>
-                      <div class="absolute bottom-6 right-6">
-                        <i
-                          class="fa-brands fa-hackerrank text-4xl text-green-400 drop-shadow"
-                        ></i>
+                          <a
+                            href="https://drive.google.com/file/d/1lOkIqP5Leej9pNwXcwItPoCmEcyyC2pj/view?usp=sharing"
+                            target="_blank"
+                            class="md:absolute left-8 bottom-10 text-stone-400 hover:text-stone-500 font-semibold text-xs transition-colors duration-300"
+                            >View Certificate &rarr;</a
+                          >
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-solid fa-trophy text-4xl text-stone-400 drop-shadow"
+                          ></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- Certification Card 4 -->
-                  <div
-                    class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
-                  >
+                    <!-- Certification Card 2 -->
                     <div
-                      class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-purple-400/40 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-purple-900/30 via-black/60 to-purple-900/10 relative p-8"
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
-                      <div class="flex flex-col flex-grow justify-start">
-                        <h3
-                          class="text-2xl font-semibold text-purple-200 mb-1 pr-12"
-                        >
-                          Android Using Kotlin
-                        </h3>
-                        <p class="text-gray-400 text-xs mb-1">
-                          Infosys Springboard
-                        </p>
-                        <p class="text-xs text-purple-300 mb-2">
-                          Issued: June 2025
-                        </p>
+                      <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-blue-400/40 hover:border-blue-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-blue-900/30 via-black/60 to-blue-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-blue-200 mb-1 pr-10"
+                          >
+                            GenAI Powered Data Analytics Job Simulation
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">Forage</p>
+                          <p class="text-xs text-blue-300 mb-2">
+                            Issued: June 2025
+                          </p>
 
-                        <a
-                          href="https://verify.onwingspan.com/"
-                          class="md:absolute left-8 bottom-10 text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
-                          >Verify Credential &rarr;</a
-                        >
+                          <a
+                            href="https://drive.google.com/file/d/1mXfvx4iMDiUG2Vv-hT9KtcSUMoyKlb9V/view?usp=sharing"
+                            target="_blank"
+                            class="md:absolute left-8 bottom-10 text-blue-400 hover:text-blue-500 font-semibold text-xs transition-colors duration-300"
+                            >Verify Credential &rarr;</a
+                          >
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-solid fa-award text-4xl text-blue-400 drop-shadow"
+                          ></i>
+                        </div>
                       </div>
-                      <div class="absolute bottom-6 right-6">
-                        <i
-                          class="fa-solid fa-award text-4xl text-purple-400 drop-shadow"
-                        ></i>
+                    </div>
+                    <!-- Certification Card 3 -->
+                    <div
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                    >
+                      <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-green-400/40 hover:border-green-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-green-900/30 via-black/60 to-green-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-green-200 mb-1 pr-12"
+                          >
+                            Structured Query Language - Intermediate
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">HackerRank</p>
+                          <p class="text-xs text-green-300 mb-2">
+                            Issued: Jan 2025
+                          </p>
+
+                          <a
+                            href="https://drive.google.com/file/d/1KBcEw1TF_AGenfRz4SgA2rRhAsbJBbtm/view?usp=sharing"
+                            target="_blank"
+                            class="md:absolute left-8 bottom-10 text-green-400 hover:text-green-500 font-semibold text-xs transition-colors duration-300"
+                            >Verify Credential &rarr;</a
+                          >
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-brands fa-hackerrank text-4xl text-green-400 drop-shadow"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Certification Card 4 -->
+                    <div
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                    >
+                      <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-purple-400/40 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-purple-900/30 via-black/60 to-purple-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-purple-200 mb-1 pr-12"
+                          >
+                            Android Using Kotlin
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">
+                            Infosys Springboard
+                          </p>
+                          <p class="text-xs text-purple-300 mb-2">
+                            Issued: June 2025
+                          </p>
+
+                          <a
+                            href="https://verify.onwingspan.com/"
+                            class="md:absolute left-8 bottom-10 text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                            >Verify Credential &rarr;</a
+                          >
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-solid fa-award text-4xl text-purple-400 drop-shadow"
+                          ></i>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- Carousel Buttons: below cards on mobile/tablet, overlay on desktop -->
+                <div
+                  class="flex w-full justify-between mt-4 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 lg:right-0 lg:px-0 static"
+                >
+                  <button
+                    id="cert-prev-btn"
+                    aria-label="Previous Certification"
+                    class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-left-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 19.5L8.25 12l7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    id="cert-next-btn"
+                    aria-label="Next Certification"
+                    class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-right-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <!-- Carousel Buttons: below cards on mobile/tablet, overlay on desktop -->
+            </div>
+
+            <!-- Simple Footer within Certifications Section -->
+            <div class="mt-16 pt-8 border-t border-white/10">
               <div
-                class="flex w-full justify-between mt-4 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 lg:right-0 lg:px-0 static"
+                class="flex justify-between items-center text-gray-400 text-sm"
               >
-                <button
-                  id="cert-prev-btn"
-                  aria-label="Previous Certification"
-                  class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-left-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.75 19.5L8.25 12l7.5-7.5"
-                    />
-                  </svg>
-                </button>
-                <button
-                  id="cert-next-btn"
-                  aria-label="Next Certification"
-                  class="p-2 bg-purple-900/40 hover:bg-purple-800/60 rounded-full backdrop-blur-sm transition-all duration-200 ease-in-out text-white hover:text-purple-200 scale-90 hover:scale-100 lg:absolute lg:-right-12 lg:top-1/2 lg:-translate-y-1/2 lg:z-30"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
-                </button>
+                <div>Built with ❤️</div>
+                <div>
+                  © <span id="current-year"></span> Shobhit. All rights
+                  reserved.
+                </div>
               </div>
             </div>
           </div>
-          
-          <!-- Simple Footer within Certifications Section -->
-          <div class="mt-16 pt-8 border-t border-white/10">
-            <div class="flex justify-between items-center text-gray-400 text-sm">
-              <div>Built with ❤️</div>
-              <div>© <span id="current-year"></span> Shobhit. All rights reserved.</div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
       </main>
     </div>
-
 
     <!-- External JavaScript -->
     <script src="assets/js/main.js"></script>
     <script>
       // Set dynamic year in footer
-      document.getElementById('current-year').textContent = new Date().getFullYear();
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        // --- Projects Carousel Logic ---
+        const track = document.getElementById("projects-track");
+        if (track) {
+          const cards = Array.from(track.children);
+          const nextBtn = document.getElementById("project-next-btn");
+          const prevBtn = document.getElementById("project-prev-btn");
+          const cardCount = cards.length;
+          let currentIndex = 0;
+          let autoPlayInterval;
+
+          const getSlidesToShow = () => {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+          };
+
+          const updateCarousel = () => {
+            const slidesToShow = getSlidesToShow();
+            const cardWidth = cards[0].offsetWidth;
+
+            if (cardCount <= slidesToShow) {
+              nextBtn.style.display = "none";
+              prevBtn.style.display = "none";
+              return;
+            } else {
+              nextBtn.style.display = "block";
+              prevBtn.style.display = "block";
+            }
+
+            // Loop logic
+            if (currentIndex > cardCount - slidesToShow) {
+              currentIndex = 0;
+            } else if (currentIndex < 0) {
+              currentIndex = cardCount - slidesToShow;
+            }
+
+            const offset = -currentIndex * cardWidth;
+            track.style.transform = `translateX(${offset}px)`;
+          };
+
+          const startAutoPlay = () => {
+            stopAutoPlay();
+            autoPlayInterval = setInterval(() => {
+              currentIndex++;
+              updateCarousel();
+            }, 3000);
+          };
+
+          const stopAutoPlay = () => {
+            clearInterval(autoPlayInterval);
+          };
+
+          nextBtn.addEventListener("click", () => {
+            currentIndex++;
+            updateCarousel();
+            startAutoPlay(); // Restart autoplay on interaction
+          });
+
+          prevBtn.addEventListener("click", () => {
+            currentIndex--;
+            updateCarousel();
+            startAutoPlay(); // Restart autoplay on interaction
+          });
+
+          window.addEventListener("resize", () => {
+            // Recalculate and update
+            updateCarousel();
+          });
+
+          // Pause on hover
+          const carousel = document.getElementById("projects-carousel");
+          carousel.addEventListener("mouseenter", stopAutoPlay);
+          carousel.addEventListener("mouseleave", startAutoPlay);
+
+          // Initial setup
+          updateCarousel();
+          startAutoPlay();
+        }
+
+        // --- Certifications Carousel Logic ---
+        const certTrack = document.getElementById("certifications-track");
+        if (certTrack) {
+          const certCards = Array.from(certTrack.children);
+          const certNextBtn = document.getElementById("cert-next-btn");
+          const certPrevBtn = document.getElementById("cert-prev-btn");
+          const certCardCount = certCards.length;
+          let certCurrentIndex = 0;
+          let certAutoPlayInterval;
+
+          const getCertSlidesToShow = () => {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+          };
+
+          const updateCertCarousel = () => {
+            const slidesToShow = getCertSlidesToShow();
+            const cardWidth = certCards[0].offsetWidth;
+
+            if (certCardCount <= slidesToShow) {
+              certNextBtn.style.display = "none";
+              certPrevBtn.style.display = "none";
+              return;
+            } else {
+              certNextBtn.style.display = "block";
+              certPrevBtn.style.display = "block";
+            }
+
+            // Loop logic
+            if (certCurrentIndex > certCardCount - slidesToShow) {
+              certCurrentIndex = 0;
+            } else if (certCurrentIndex < 0) {
+              certCurrentIndex = certCardCount - slidesToShow;
+            }
+
+            const offset = -certCurrentIndex * cardWidth;
+            certTrack.style.transform = `translateX(${offset}px)`;
+          };
+
+          const startCertAutoPlay = () => {
+            stopCertAutoPlay();
+            certAutoPlayInterval = setInterval(() => {
+              certCurrentIndex++;
+              updateCertCarousel();
+            }, 3000);
+          };
+
+          const stopCertAutoPlay = () => {
+            clearInterval(certAutoPlayInterval);
+          };
+
+          certNextBtn.addEventListener("click", () => {
+            certCurrentIndex++;
+            updateCertCarousel();
+            startCertAutoPlay(); // Restart autoplay on interaction
+          });
+
+          certPrevBtn.addEventListener("click", () => {
+            certCurrentIndex--;
+            updateCertCarousel();
+            startCertAutoPlay(); // Restart autoplay on interaction
+          });
+
+          window.addEventListener("resize", () => {
+            // Recalculate and update
+            updateCertCarousel();
+          });
+
+          // Pause on hover
+          const certCarousel = document.getElementById(
+            "certifications-carousel"
+          );
+          certCarousel.addEventListener("mouseenter", stopCertAutoPlay);
+          certCarousel.addEventListener("mouseleave", startCertAutoPlay);
+
+          // Initial setup
+          updateCertCarousel();
+          startCertAutoPlay();
+        }
+      });
     </script>
   </body>
 </html>

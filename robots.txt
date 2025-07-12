@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://krshobhit.me/sitemap.xml
-
+ 
 # Disallow any potential admin or private areas
 Disallow: /admin/
 Disallow: /private/ 

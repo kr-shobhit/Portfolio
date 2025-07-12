@@ -390,92 +390,7 @@ class ScrollAnimations {
 }
 
 // Carousel Class
-class Carousel {
-  constructor(type) {
-    this.type = type; // 'projects' or 'certifications'
-    this.track = document.getElementById(`${type}-track`);
-    this.nextBtn = document.getElementById(`${type}-next-btn`);
-    this.prevBtn = document.getElementById(`${type}-prev-btn`);
-    this.cards = this.track ? Array.from(this.track.children) : [];
-    this.cardCount = this.cards.length;
-    this.currentIndex = 0;
-    this.autoPlayInterval = null;
-    
-    if (this.track && this.nextBtn && this.prevBtn) {
-      this.init();
-    }
-  }
 
-  init() {
-    this.updateCarousel();
-    this.startAutoPlay();
-    this.setupEventListeners();
-  }
-
-  getSlidesToShow() {
-    if (window.innerWidth >= 1024) return 3;
-    if (window.innerWidth >= 768) return 2;
-    return 1;
-  }
-
-  updateCarousel() {
-    const slidesToShow = this.getSlidesToShow();
-    const cardWidth = this.cards[0].offsetWidth;
-
-    if (this.cardCount <= slidesToShow) {
-      this.nextBtn.style.display = "none";
-      this.prevBtn.style.display = "none";
-      return;
-    } else {
-      this.nextBtn.style.display = "block";
-      this.prevBtn.style.display = "block";
-    }
-
-    // Loop logic
-    if (this.currentIndex > this.cardCount - slidesToShow) {
-      this.currentIndex = 0;
-    } else if (this.currentIndex < 0) {
-      this.currentIndex = this.cardCount - slidesToShow;
-    }
-
-    const offset = -this.currentIndex * cardWidth;
-    this.track.style.transform = `translateX(${offset}px)`;
-  }
-
-  startAutoPlay() {
-    this.stopAutoPlay();
-    this.autoPlayInterval = setInterval(() => {
-      this.currentIndex++;
-      this.updateCarousel();
-    }, 4000);
-  }
-
-  stopAutoPlay() {
-    clearInterval(this.autoPlayInterval);
-  }
-
-  setupEventListeners() {
-    this.nextBtn.addEventListener("click", () => {
-      this.currentIndex++;
-      this.updateCarousel();
-      this.startAutoPlay();
-    });
-
-    this.prevBtn.addEventListener("click", () => {
-      this.currentIndex--;
-      this.updateCarousel();
-      this.startAutoPlay();
-    });
-
-    window.addEventListener("resize", () => {
-      this.updateCarousel();
-    });
-
-    const carousel = document.getElementById(`${this.type}-carousel`);
-    carousel.addEventListener("mouseenter", () => this.stopAutoPlay());
-    carousel.addEventListener("mouseleave", () => this.startAutoPlay());
-  }
-}
 
 // Skills Management Class
 class SkillsManager {
@@ -986,8 +901,6 @@ class PortfolioApp {
       new ParticleSystem();
       new CustomCursor();
       new ScrollAnimations();
-      new Carousel('projects');
-      new Carousel('certifications');
       new SkillsManager();
       new MobileMenu();
       new TouchDeviceHandler();
