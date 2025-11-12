@@ -18,7 +18,7 @@ class ParticleSystem {
     this.mouse = { x: null, y: null, radius: 150 };
     this.isTouch = isTouchDevice();
     this.isSmallScreen = window.innerWidth < 768;
-    
+
     if (this.canvas) {
       this.init();
     }
@@ -29,7 +29,7 @@ class ParticleSystem {
     this.setupCanvas();
     this.initParticles();
     this.setupEventListeners();
-    
+
     if (!this.isTouch && !this.isSmallScreen) {
       this.animate();
     } else {
@@ -74,7 +74,17 @@ class ParticleSystem {
       let x = Math.random() * this.canvas.width;
       let y = Math.random() * this.canvas.height;
       let opacity = Math.random() * 0.5 + 0.3;
-      this.particles.push(new Particle(x, y, size, opacity, this.mouse, this.isTouch, this.isSmallScreen));
+      this.particles.push(
+        new Particle(
+          x,
+          y,
+          size,
+          opacity,
+          this.mouse,
+          this.isTouch,
+          this.isSmallScreen
+        )
+      );
     }
   }
 
@@ -162,7 +172,7 @@ class CustomCursor {
     this.cursorDot = document.getElementById("custom-cursor-dot");
     this.cursorArrow = document.getElementById("custom-cursor-arrow");
     this.hoverables = document.querySelectorAll("a, svg, button, .card-hover");
-    
+
     if (this.cursor && this.cursorDot && this.cursorArrow) {
       this.init();
     }
@@ -201,7 +211,7 @@ class ScrollAnimations {
     this.homeNavLink = document.getElementById("nav-home-link");
     this.isScrolling = false;
     this.scrollTimeout = null;
-    
+
     this.init();
   }
 
@@ -299,15 +309,15 @@ class ScrollAnimations {
     const scrollArrow = document.querySelector(".scroll-down-arrow");
     if (scrollArrow) {
       scrollArrow.addEventListener("click", () => {
-        document
-          .getElementById("about")
-          .scrollIntoView({ behavior: "smooth" });
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
       });
     }
   }
 
   setupSnapScrolling() {
-    const snapSections = Array.from(this.snapWrapper.querySelectorAll("section"));
+    const snapSections = Array.from(
+      this.snapWrapper.querySelectorAll("section")
+    );
 
     const scrollToSection = (index) => {
       if (index < 0 || index >= snapSections.length) return;
@@ -345,8 +355,7 @@ class ScrollAnimations {
         const currentIdx = getCurrentSectionIndex();
         let nextIdx = currentIdx + (delta > 0 ? 1 : -1);
         if (nextIdx < 0) nextIdx = 0;
-        if (nextIdx >= snapSections.length)
-          nextIdx = snapSections.length - 1;
+        if (nextIdx >= snapSections.length) nextIdx = snapSections.length - 1;
         if (nextIdx !== currentIdx) {
           e.preventDefault();
           scrollToSection(nextIdx);
@@ -391,7 +400,6 @@ class ScrollAnimations {
 
 // Carousel Class
 
-
 // Skills Management Class
 class SkillsManager {
   constructor() {
@@ -402,7 +410,7 @@ class SkillsManager {
     this.selected = document.getElementById("skills-filter-dropdown-selected");
     this.leftBtn = document.getElementById("skills-scroll-left");
     this.rightBtn = document.getElementById("skills-scroll-right");
-    
+
     this.skills = [
       {
         label: "C++",
@@ -421,78 +429,54 @@ class SkillsManager {
         border: "border-yellow-900/30",
       },
       {
-        label: "Java",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-        category: "languages",
-        color: "text-orange-200",
-        bg: "from-black/80 via-orange-600/40 to-blue-900/60",
-        border: "border-orange-900/30",
-      },
-      {
-        label: "Kotlin",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-        category: "languages",
-        color: "text-purple-200",
-        bg: "from-black/80 via-purple-500/40 to-blue-900/40",
-        border: "border-purple-900/30",
-      },
-      {
-        label: "HTML",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        category: "frontend",
-        color: "text-orange-200",
-        bg: "from-black/80 via-orange-900/40 to-black/80",
-        border: "border-orange-900/30",
-      },
-      {
-        label: "CSS",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        label: "NumPy",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
         category: "frontend",
         color: "text-blue-200",
         bg: "from-black/80 via-blue-900/40 to-black/80",
         border: "border-blue-900/30",
       },
       {
-        label: "JavaScript",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        label: "Pandas",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+        category: "frontend",
+        color: "text-blue-200",
+        bg: "from-black/80 via-blue-900/40 to-black/80",
+        border: "border-blue-900/30",
+      },
+      {
+        label: "Matplotlib",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
         category: "frontend",
         color: "text-yellow-200",
         bg: "from-black/80 via-yellow-900/40",
         border: "border-yellow-900/30",
       },
       {
-        label: "Tailwind CSS",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        label: "OpenCV",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
         category: "frontend",
-        color: "text-blue-200",
-        bg: "from-black/80 via-blue-900/40 to-black/80",
-        border: "border-blue-900/30",
+        color: "text-red-200",
+        bg: "from-black/80 via-red-900/40 to-black/80",
+        border: "border-red-900/30",
       },
-      {
-        label: "Jetpack Compose",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg",
-        category: "frontend",
-        color: "text-blue-200",
-        bg: "from-black/80 via-blue-900/40 to-black/80",
-        border: "border-blue-900/30",
-      },
-      {
-        label: "Node.js",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        category: "backend",
-        color: "text-green-200",
-        bg: "from-black/80 via-green-900/40 to-black/80",
-        border: "border-green-900/30",
-      },
-      {
-        label: "Express",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        category: "backend",
-        color: "text-gray-200",
-        bg: "from-black/80 via-blue-900/40 to-black/80",
-        border: "border-white/10",
-        extra: "bg-white rounded-xl p-2",
-      },
+      // {
+      //   label: "Node.js",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      //   category: "backend",
+      //   color: "text-green-200",
+      //   bg: "from-black/80 via-green-900/40 to-black/80",
+      //   border: "border-green-900/30",
+      // },
+      // {
+      //   label: "Express",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      //   category: "backend",
+      //   color: "text-gray-200",
+      //   bg: "from-black/80 via-blue-900/40 to-black/80",
+      //   border: "border-white/10",
+      //   extra: "bg-white rounded-xl p-2",
+      // },
       {
         label: "MySQL",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
@@ -526,12 +510,44 @@ class SkillsManager {
         border: "border-green-900/30",
       },
       {
+        label: "Google Cloud",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+        category: "cloud",
+        color: "text-yellow-200",
+        bg: "from-black/80 via-yellow-900/40 to-black/80",
+        border: "border-yellow-900/30",
+      },
+      {
+        label: "Amazon Web Services",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        category: "cloud",
+        color: "text-orange-200",
+        bg: "from-black/80 via-orange-900/40 to-black/80",
+        border: "border-orange-900/30",
+      },
+      {
+        label: "Docker",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        category: "cloud",
+        color: "text-blue-200",
+        bg: "from-black/80 via-blue-900/40 to-black/80",
+        border: "border-blue-900/30",
+      },
+      {
         label: "Vercel",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
         category: "cloud",
         color: "text-pink-200",
         bg: "from-black/80 via-pink-900/40 to-black/80",
         border: "border-pink-900/30",
+      },
+      {
+        label: "Netlify",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+        category: "cloud",
+        color: "text-white-200",
+        bg: "from-black/80 via-white-900/40 to-black/80",
+        border: "border-white-900/30",
       },
       {
         label: "Figma",
@@ -552,6 +568,14 @@ class SkillsManager {
       {
         label: "Git",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        category: "tools",
+        color: "text-red-200",
+        bg: "from-black/80 via-red-900/40 to-black/80",
+        border: "border-red-900/30",
+      },
+      {
+        label: "GitHub",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         category: "tools",
         color: "text-red-200",
         bg: "from-black/80 via-red-900/40 to-black/80",
@@ -582,7 +606,7 @@ class SkillsManager {
         border: "border-red-900/30",
       },
     ];
-    
+
     this.init();
   }
 
@@ -609,7 +633,7 @@ class SkillsManager {
     `
       )
       .join("");
-    
+
     this.grid.classList.remove(
       "flex",
       "overflow-x-auto",
@@ -625,7 +649,7 @@ class SkillsManager {
       "md:grid-cols-4",
       "lg:grid-cols-6"
     );
-    
+
     // Tooltip show/hide
     this.grid.querySelectorAll(".skills-card").forEach((card) => {
       card.addEventListener("mouseenter", () => {
@@ -653,19 +677,21 @@ class SkillsManager {
     if (this.dropdownBtn && this.dropdownList && this.selected) {
       this.dropdownBtn.addEventListener("click", (e) => {
         e.stopPropagation();
-        const expanded = this.dropdownBtn.getAttribute("aria-expanded") === "true";
+        const expanded =
+          this.dropdownBtn.getAttribute("aria-expanded") === "true";
         this.dropdownBtn.setAttribute("aria-expanded", !expanded);
         this.dropdownList.classList.toggle("hidden");
       });
 
-      const dropdownBtns = this.dropdownList.querySelectorAll(".skills-filter-btn");
+      const dropdownBtns =
+        this.dropdownList.querySelectorAll(".skills-filter-btn");
       dropdownBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           this.selected.textContent = btn.textContent;
           this.dropdownList.classList.add("hidden");
           this.dropdownBtn.setAttribute("aria-expanded", "false");
           this.renderSkillsGrid(btn.dataset.filter);
-          
+
           dropdownBtns.forEach((b) => {
             b.classList.remove("active", "bg-purple-700", "text-white");
           });
@@ -702,7 +728,7 @@ class SkillsManager {
           );
           return;
         }
-        
+
         if (this.grid.scrollWidth > this.grid.clientWidth + 8) {
           this.leftBtn.classList.remove("hidden");
           this.rightBtn.classList.remove("hidden");
@@ -710,7 +736,7 @@ class SkillsManager {
           this.leftBtn.classList.add("hidden");
           this.rightBtn.classList.add("hidden");
         }
-        
+
         this.grid.classList.add(
           "overflow-x-auto",
           "whitespace-nowrap",
@@ -749,7 +775,7 @@ class MobileMenu {
     this.menuBtn = document.getElementById("mobile-menu-btn");
     this.menu = document.getElementById("mobile-menu");
     this.closeBtn = document.getElementById("mobile-menu-close");
-    
+
     if (this.menuBtn && this.menu && this.closeBtn) {
       this.init();
     }
@@ -792,17 +818,17 @@ class TouchDeviceHandler {
       const cursor = document.getElementById("custom-cursor");
       const cursorDot = document.getElementById("custom-cursor-dot");
       const cursorArrow = document.getElementById("custom-cursor-arrow");
-      
+
       if (cursor) cursor.style.display = "none";
       if (cursorDot) cursorDot.style.display = "none";
       if (cursorArrow) cursorArrow.style.display = "none";
-      
+
       // Remove cursor-none from body and elements
       document.body.classList.remove("cursor-none");
       document.querySelectorAll("a, button, .card-hover").forEach((el) => {
         el.style.cursor = "";
       });
-      
+
       // Remove hover effects for touch devices
       document.querySelectorAll(".skills-card, .card-hover").forEach((el) => {
         el.onmouseenter = null;
@@ -817,7 +843,7 @@ class NavbarVisibilityHandler {
   constructor() {
     this.nav = document.querySelector("nav");
     this.homeSection = document.getElementById("hero");
-    
+
     if (this.nav && this.homeSection) {
       this.init();
     }
@@ -840,9 +866,9 @@ class NavbarVisibilityHandler {
       },
       { threshold: 0.1 }
     );
-    
+
     observer.observe(this.homeSection);
-    
+
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 768) {
         this.nav.classList.remove("hidden");
@@ -858,16 +884,16 @@ class PerformanceMonitor {
   }
 
   init() {
-    if ('PerformanceObserver' in window) {
+    if ("PerformanceObserver" in window) {
       const observer = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
-          if (entry.entryType === 'largest-contentful-paint') {
-            console.log('LCP:', entry.startTime);
+          if (entry.entryType === "largest-contentful-paint") {
+            console.log("LCP:", entry.startTime);
             // You can send this to analytics here
           }
         }
       });
-      observer.observe({ entryTypes: ['largest-contentful-paint'] });
+      observer.observe({ entryTypes: ["largest-contentful-paint"] });
     }
   }
 }
@@ -879,12 +905,12 @@ class ErrorHandler {
   }
 
   init() {
-    window.addEventListener('error', (e) => {
-      console.error('Global error:', e.error);
+    window.addEventListener("error", (e) => {
+      console.error("Global error:", e.error);
     });
 
-    window.addEventListener('unhandledrejection', (e) => {
-      console.error('Unhandled promise rejection:', e.reason);
+    window.addEventListener("unhandledrejection", (e) => {
+      console.error("Unhandled promise rejection:", e.reason);
     });
   }
 }
@@ -907,10 +933,10 @@ class PortfolioApp {
       new NavbarVisibilityHandler();
       new PerformanceMonitor();
       new ErrorHandler();
-      
-      console.log('Portfolio app initialized successfully');
+
+      console.log("Portfolio app initialized successfully");
     } catch (error) {
-      console.error('Portfolio app failed to initialize:', error);
+      console.error("Portfolio app failed to initialize:", error);
     }
   }
 }
@@ -934,4 +960,4 @@ window.addEventListener("load", () => {
     };
     currentDateElement.textContent = now.toLocaleDateString("en-US", options);
   }
-}); 
+});
