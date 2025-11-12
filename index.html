@@ -348,7 +348,7 @@
             <button
               class="animate-on-scroll px-8 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-900 transform hover:scale-105 transition-all duration-300 ease-in-out opacity-0 translate-y-12"
               data-delay="400"
-              onclick="window.open('https://drive.google.com/file/d/1lmLd7Ak1gLEzqeYAauNArpuiC_wR53Dt/view?usp=sharing', '_blank')"
+              onclick="window.open('https://drive.google.com/file/d/1T9YkCAaxcxix9Ep4ApXTDhS1FTbdyT5U/view?usp=sharing', '_blank')"
             >
               Download Resume
             </button>
@@ -533,13 +533,7 @@
                     class="skills-filter-btn w-full text-left py-2"
                     data-filter="frontend"
                   >
-                    Frontend
-                  </button>
-                  <button
-                    class="skills-filter-btn w-full text-left py-2"
-                    data-filter="backend"
-                  >
-                    Backend
+                    Frameworks
                   </button>
                   <button
                     class="skills-filter-btn w-full text-left py-2"
@@ -547,11 +541,17 @@
                   >
                     Database
                   </button>
+                  <!-- <button
+                    class="skills-filter-btn w-full text-left py-2"
+                    data-filter="backend"
+                  >
+                    Automations
+                  </button> -->
                   <button
                     class="skills-filter-btn w-full text-left py-2"
                     data-filter="cloud"
                   >
-                    Cloud
+                    DevOps
                   </button>
                   <button
                     class="skills-filter-btn w-full text-left py-2"
@@ -578,17 +578,17 @@
                 >
                   Languages
                 </button>
-                <button class="skills-filter-btn" data-filter="frontend">
-                  Frontend
-                </button>
-                <button class="skills-filter-btn" data-filter="backend">
-                  Backend
+                <button class="skills-filter-btn" data-filter="frontend"> <!--- frontend is named as frameworks, 12-11-2025-->
+                  Frameworks
                 </button>
                 <button class="skills-filter-btn" data-filter="database">
                   Database
                 </button>
+                <!-- <button class="skills-filter-btn" data-filter="backend">   
+                  Backend
+                </button> -->
                 <button class="skills-filter-btn" data-filter="cloud">
-                  Cloud
+                  DevOps
                 </button>
                 <button class="skills-filter-btn" data-filter="design">
                   Design
@@ -666,78 +666,54 @@
                       border: "border-yellow-900/30",
                     },
                     {
-                      label: "Java",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-                      category: "languages",
-                      color: "text-orange-200",
-                      bg: "from-black/80 via-orange-600/40 to-blue-900/60",
-                      border: "border-orange-900/30",
-                    },
-                    {
-                      label: "Kotlin",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-                      category: "languages",
-                      color: "text-purple-200",
-                      bg: "from-black/80 via-purple-500/40 to-blue-900/40",
-                      border: "border-purple-900/30",
-                    },
-                    {
-                      label: "HTML",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-                      category: "frontend",
-                      color: "text-orange-200",
-                      bg: "from-black/80 via-orange-900/40 to-black/80",
-                      border: "border-orange-900/30",
-                    },
-                    {
-                      label: "CSS",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                      label: "NumPy",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
                       category: "frontend",
                       color: "text-blue-200",
                       bg: "from-black/80 via-blue-900/40 to-black/80",
                       border: "border-blue-900/30",
                     },
                     {
-                      label: "JavaScript",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                      label: "Pandas",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+                      category: "frontend",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
+                      label: "Matplotlib",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
                       category: "frontend",
                       color: "text-yellow-200",
                       bg: "from-black/80 via-yellow-900/40",
                       border: "border-yellow-900/30",
                     },
                     {
-                      label: "Tailwind CSS",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+                      label: "OpenCV",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
                       category: "frontend",
-                      color: "text-blue-200",
-                      bg: "from-black/80 via-blue-900/40 to-black/80",
-                      border: "border-blue-900/30",
+                      color: "text-red-200",
+                      bg: "from-black/80 via-red-900/40 to-black/80",
+                      border: "border-red-900/30",
                     },
-                    {
-                      label: "Jetpack Compose",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg",
-                      category: "frontend",
-                      color: "text-blue-200",
-                      bg: "from-black/80 via-blue-900/40 to-black/80",
-                      border: "border-blue-900/30",
-                    },
-                    {
-                      label: "Node.js",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                      category: "backend",
-                      color: "text-green-200",
-                      bg: "from-black/80 via-green-900/40 to-black/80",
-                      border: "border-green-900/30",
-                    },
-                    {
-                      label: "Express",
-                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-                      category: "backend",
-                      color: "text-gray-200",
-                      bg: "from-black/80 via-blue-900/40 to-black/80",
-                      border: "border-white/10",
-                      extra: "bg-white rounded-xl p-2",
-                    },
+                    // {
+                    //   label: "Node.js",
+                    //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                    //   category: "backend",
+                    //   color: "text-green-200",
+                    //   bg: "from-black/80 via-green-900/40 to-black/80",
+                    //   border: "border-green-900/30",
+                    // },
+                    // {
+                    //   label: "Express",
+                    //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+                    //   category: "backend",
+                    //   color: "text-gray-200",
+                    //   bg: "from-black/80 via-blue-900/40 to-black/80",
+                    //   border: "border-white/10",
+                    //   extra: "bg-white rounded-xl p-2",
+                    // },
                     {
                       label: "MySQL",
                       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
@@ -771,12 +747,44 @@
                       border: "border-green-900/30",
                     },
                     {
+                      label: "Google Cloud Console",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+                      category: "cloud",
+                      color: "text-yellow-200",
+                      bg: "from-black/80 via-yellow-900/40 to-black/80",
+                      border: "border-yellow-900/30",
+                    },
+                    {
+                      label: "Amazon Web Services",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+                      category: "cloud",
+                      color: "text-orange-200",
+                      bg: "from-black/80 via-orange-900/40 to-black/80",
+                      border: "border-orange-900/30",
+                    },
+                    {
+                      label: "Docker",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+                      category: "cloud",
+                      color: "text-blue-200",
+                      bg: "from-black/80 via-blue-900/40 to-black/80",
+                      border: "border-blue-900/30",
+                    },
+                    {
                       label: "Vercel",
                       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
                       category: "cloud",
                       color: "text-pink-200",
                       bg: "from-black/80 via-pink-900/40 to-black/80",
                       border: "border-pink-900/30",
+                    },
+                    {
+                      label: "Netlify",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+                      category: "cloud",
+                      color: "text-white-200",
+                      bg: "from-black/80 via-white-900/40 to-black/80",
+                      border: "border-white-900/30",
                     },
                     {
                       label: "Figma",
@@ -797,6 +805,14 @@
                     {
                       label: "Git",
                       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+                      category: "tools",
+                      color: "text-red-200",
+                      bg: "from-black/80 via-red-900/40 to-black/80",
+                      border: "border-red-900/30",
+                    },
+                    {
+                      label: "GitHub",
+                      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
                       category: "tools",
                       color: "text-red-200",
                       bg: "from-black/80 via-red-900/40 to-black/80",
@@ -1030,6 +1046,45 @@
                     id="projects-track"
                     class="flex transition-transform duration-700 ease-in-out"
                   >
+                    <!-- Project Card 0 -->
+                    <div
+                      class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                    >
+                      <div
+                        class="card-hover h-full rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40"
+                      >
+                        <img
+                          src="https://placehold.co/600x400/3182ce/ffffff?text=Loom+- AI Content Pipeline"
+                          alt="Project 1"
+                          class="w-full h-40 object-cover"
+                        />
+                        <div class="p-4 flex flex-col flex-grow">
+                          <h3
+                            class="text-xl font-semibold mb-2 text-purple-300"
+                          >
+                            Loom - AI Powered Content Generator
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-3">
+                            Python, Google Gemini API, X API, Google Sheets API
+                          </p>
+                          <p
+                            class="text-gray-300 text-sm mb-4 flex-grow leading-relaxed pb-1"
+                          >
+                            AI-driven content pipeline to automatically generate, validate, and publish daily educational posts with real-time tracking and fault-tolerant cloud deployment.
+                          </p>
+                          <div
+                            class="flex justify-between items-center mt-auto"
+                          >
+                            <a
+                              href="https://github.com/kr-shobhit/Loom"
+                              class="text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                              >View Source &rarr;</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <!-- Project Card 1 -->
                     <div
                       class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
@@ -1152,7 +1207,7 @@
                     </div>
 
                     <!-- Project Card 4 -->
-                    <div
+                    <!-- <div
                       class="project-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
                       <div
@@ -1193,7 +1248,9 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
+
+
                   </div>
                 </div>
                 <!-- Carousel Buttons: below cards on mobile/tablet, overlay on desktop -->
@@ -1480,6 +1537,40 @@
                       class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
                     >
                       <div
+                        class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-orange-400/40 hover:border-orange-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-orange-900/30 via-black/60 to-orange-900/10 relative p-8"
+                      >
+                        <div class="flex flex-col flex-grow justify-start">
+                          <h3
+                            class="text-2xl font-semibold text-orange-200 mb-1 pr-12"
+                          >
+                            Postman Fundamentals API Student Expert
+                          </h3>
+                          <p class="text-gray-400 text-xs mb-1">
+                            Postman
+                          </p>
+                          <p class="text-xs text-orange-300 mb-2">
+                            Issued: Oct 2025
+                          </p>
+
+                          <!-- <a
+                            href="https://verify.onwingspan.com/"
+                            class="md:absolute left-8 bottom-10 text-purple-400 hover:text-purple-500 font-semibold text-xs transition-colors duration-300"
+                            >Verify Credential &rarr;</a
+                          > -->
+                        </div>
+                        <div class="absolute bottom-6 right-6">
+                          <i
+                            class="fa-solid fa-award text-4xl text-orange-400 drop-shadow"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Certification Card 5 -->
+                    <div
+                      class="cert-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4"
+                    >
+                      <div
                         class="card-hover h-64 rounded-lg overflow-hidden flex flex-col transition-all duration-300 border border-purple-400/40 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 hover:bg-gray-800/40 bg-gradient-to-br from-purple-900/30 via-black/60 to-purple-900/10 relative p-8"
                       >
                         <div class="flex flex-col flex-grow justify-start">
@@ -1508,6 +1599,12 @@
                         </div>
                       </div>
                     </div>
+
+
+
+
+
+
                   </div>
                 </div>
                 <!-- Carousel Buttons: below cards on mobile/tablet, overlay on desktop -->
