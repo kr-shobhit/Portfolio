@@ -460,6 +460,14 @@ class SkillsManager {
         bg: "from-black/80 via-red-900/40 to-black/80",
         border: "border-red-900/30",
       },
+      {
+        label: "FastAPI",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+        category: "frontend",
+        color: "text-red-200",
+        bg: "from-black/80 via-red-900/40 to-black/80",
+        border: "border-red-900/30",
+      },
       // {
       //   label: "Node.js",
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
@@ -488,6 +496,14 @@ class SkillsManager {
       {
         label: "PostgreSQL",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        category: "database",
+        color: "text-blue-200",
+        bg: "from-black/80 via-blue-900/40 to-black/80",
+        border: "border-blue-900/30",
+      },
+      {
+        label: "SQLite",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
         category: "database",
         color: "text-blue-200",
         bg: "from-black/80 via-blue-900/40 to-black/80",
@@ -597,14 +613,14 @@ class SkillsManager {
         bg: "from-black/80 via-red-900/40 to-black/80",
         border: "border-red-900/30",
       },
-      {
-        label: "Android Studio",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
-        category: "tools",
-        color: "text-red-200",
-        bg: "from-black/80 via-red-900/40 to-black/80",
-        border: "border-red-900/30",
-      },
+      // {
+      //   label: "Android Studio",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+      //   category: "tools",
+      //   color: "text-red-200",
+      //   bg: "from-black/80 via-red-900/40 to-black/80",
+      //   border: "border-red-900/30",
+      // },
     ];
 
     this.init();
